@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import MagneticButton from "./MagneticButton";
 
 // ── HIGH-FIDELITY CLIENT LOGOS ───────────────────────────────────────────────
 

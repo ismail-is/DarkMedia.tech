@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import dynamic from "next/dynamic";
 import MagneticButton from "./MagneticButton";
 
@@ -9,12 +9,12 @@ const LogoVisual   = dynamic(() => import("./LogoSphere"),      { ssr: false });
 const BackgroundScene = dynamic(() => import("./BackgroundScene"), { ssr: false });
 
 // ── animation variants ──────────────────────────────────────────────────────
-const container = {
+const container: Variants = {
   hidden:  {},
   visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } },
 };
 
-const reveal = {
+const reveal: Variants = {
   hidden:  { y: "108%", opacity: 0 },
   visible: {
     y: "0%", opacity: 1,
@@ -22,7 +22,7 @@ const reveal = {
   },
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden:  { opacity: 0, y: 24 },
   visible: {
     opacity: 1, y: 0,

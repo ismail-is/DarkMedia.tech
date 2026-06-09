@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -28,7 +27,7 @@ export default function Footer() {
             We create digital experiences that inspire, engage, and drive real results for ambitious brands.
           </p>
           <button className="footer-cta-btn">
-            <span className="cta-text">LET'S CREATE SOMETHING</span>
+            <span className="cta-text">LET&apos;S CREATE SOMETHING</span>
             <span className="cta-icon">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -133,7 +132,7 @@ export default function Footer() {
         </div>
         
         <div className="footer-quote">
-          Let's build something extraordinary together.
+          Let&apos;s build something extraordinary together.
         </div>
 
         <div className="footer-social-wrapper">

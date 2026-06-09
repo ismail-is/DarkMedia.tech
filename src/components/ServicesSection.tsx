@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import MagneticButton from "./MagneticButton";
 import Image from "next/image";
 
@@ -83,7 +83,7 @@ interface ServiceData {
   img: string;
 }
 
-function ServiceCard({ service, index }: { service: ServiceData; index: number }) {
+function ServiceCard({ service }: { service: ServiceData; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
   
   // Motion values for tilt angles
